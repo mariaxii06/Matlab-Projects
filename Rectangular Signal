@@ -1,0 +1,7 @@
+>> t = -20:0.1:20;
+>> s = zeros(size(t)); 
+>> indices = find(t >= -5 & t <= 5); 
+>> s(indices) = 1;
+>> plot(t, s);
+>> ylim([-0.5 1.5]);
+>> grid on;
