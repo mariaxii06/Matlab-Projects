@@ -1,0 +1,5 @@
+>> t = -10:1:10;
+s = zeros(size(t)); %signal canvas
+>> indices = find(t >= 1 & t <= 5);
+>> s(indices) = 1;
+>> soundsc(s, 8000) 
