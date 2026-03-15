@@ -1,0 +1,12 @@
+>> % Rising side (from t = -5 to 0)
+rise_idx = find(t >= -5 & t < 0);
+s(rise_idx) = (t(rise_idx) + 5) / 5; % Goes from 0 to 1
+
+>> % Falling side (from t = 0 to 5)
+fall_idx = find(t >= 0 & t <= 5);
+s(fall_idx) = 1 - (t(fall_idx) / 5); % Goes from 1 to 0
+
+plot(t, s);
+title('Triangle Signal Replicated');
+grid on;
+>> 
